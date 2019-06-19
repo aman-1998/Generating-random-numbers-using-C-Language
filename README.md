@@ -16,7 +16,7 @@ starting state, if you are clever enough).
 If you want to get different sequences, you need to seed the random number
 generator using srand i.e., srand(time(NULL)).
 
-Here time(0) returns the number of seconds since the epoch (00:00:00 UTC, 
+Here time(NULL) returns the number of seconds since the epoch (00:00:00 UTC, 
 January 1, 1970, for POSIX systems, not counting leap seconds). Note that
 this still might give repeated values if you run it twice in the same 
 second, and it's extremely dangerous if you expect to distribute your code 
